@@ -3,7 +3,7 @@ import pandas as pd
 from joblib import load
 
 
-model = load(r"C:\Users\ST\Downloads\my_telco_trained_model.joblib")
+model = load("my_telco_trained_model.joblib")
 st.title("Telecom Customer churun prediction App")
 st.header("Enter Customer Information")
 tenure = st.number_input("Tenure in moths", min_value= 0, max_value=100)
